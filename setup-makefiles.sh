@@ -17,8 +17,8 @@
 
 set -e
 
-DEVICE=dory
-VENDOR=lge
+DEVICE=sprat
+VENDOR=samsung
 
 INITIAL_COPYRIGHT_YEAR=2018
 

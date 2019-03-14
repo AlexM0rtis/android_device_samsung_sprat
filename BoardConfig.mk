@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/dory
+DEVICE_PATH := device/samsung/sprat
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -37,9 +37,9 @@ BOARD_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel image
 TARGET_KERNEL_APPEND_DTB := true
-TARGET_KERNEL_SOURCE := kernel/lge/dory
-TARGET_KERNEL_CONFIG := dory_defconfig
-BOARD_KERNEL_CMDLINE := androidboot.hardware=dory user_debug=31 maxcpus=4 msm_rtb.filter=0x3F console=null androidboot.console=null
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
+TARGET_KERNEL_CONFIG := sprat_defconfig
+BOARD_KERNEL_CMDLINE := androidboot.hardware=sprat user_debug=31 maxcpus=4 msm_rtb.filter=0x3F console=null androidboot.console=null
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x0008000 --ramdisk_offset 0x2000000 --second_offset 0x0f00000 --tags_offset 0x01E00000
@@ -53,7 +53,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.dory
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.sprat
 
 # SELinux policies
 # qcom sepolicy

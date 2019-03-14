@@ -19,7 +19,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "LG G Watch"
+#define BTM_DEF_LOCAL_NAME   "Samsung Gear Live"
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
 #define MAX_L2CAP_CHANNELS    14

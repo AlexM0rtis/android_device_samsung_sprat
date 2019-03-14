@@ -16,7 +16,7 @@
 
 # Density
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
+    ro.sf.lcd_density=280
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \

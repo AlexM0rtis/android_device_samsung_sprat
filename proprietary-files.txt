@@ -9,7 +9,7 @@ vendor/firmware/BCM20702A.hcd
 bin/batteryd
 
 # Sensors
-lib/hw/sensors.dory.so:lib/hw/sensors.msm8226.so
+lib/hw/sensors.sprat.so:lib/hw/sensors.msm8226.so
 lib/hw/sensors.invensense.so
 lib/hw/lis3dsh_tilt.so
 

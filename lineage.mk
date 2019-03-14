@@ -21,16 +21,16 @@ $(call inherit-product, vendor/cm/config/common_mini.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_tiny.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lge/dory/device.mk)
+$(call inherit-product, device/samsung/sprat/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := G Watch
-PRODUCT_NAME := lineage_dory
-PRODUCT_MODEL := dory
-PRODUCT_DEVICE := dory
-PRODUCT_MANUFACTURER := LGE
-PRODUCT_BRAND := lge
+PRODUCT_RELEASE_NAME := Gear Live
+PRODUCT_NAME := cm_sprat
+PRODUCT_MODEL := sprat
+PRODUCT_DEVICE := sprat
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_BRAND := Samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=lge/platina/dory:6.0.1/M1D65N/3853039:user/release-keys \
-    PRIVATE_BUILD_DESC="platina-user 6.0.1 M1D65N 3853039 release-keys"
+    BUILD_FINGERPRINT=samsung/sprat/sprat:6.0.1/MEC23G/2576000:user/release-keys \
+    PRIVATE_BUILD_DESC="sprat-user 6.0.1 MEC23G 2576000 release-keys"

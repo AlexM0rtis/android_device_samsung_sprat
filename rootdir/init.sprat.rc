@@ -79,7 +79,7 @@ on boot
     write /sys/class/kgsl/kgsl-3d0/devfreq/governor performance
 
 on fs
-    mount_all /fstab.dory
+    mount_all /fstab.sprat
 
 on post-fs
     restorecon_recursive /persist

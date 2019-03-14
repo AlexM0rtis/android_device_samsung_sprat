@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/lge/dory
+LOCAL_PATH := device/samsung/sprat
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -23,14 +23,17 @@ PRODUCT_AAPT_CONFIG := hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 280
-TARGET_SCREEN_WIDTH := 280
+TARGET_SCREEN_HEIGHT := 320
+TARGET_SCREEN_WIDTH := 320
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.dory \
-    init.dory.rc \
-    ueventd.dory.rc
+    fstab.sprat \
+    init.sprat.rc \
+    ueventd.sprat.rc
+    
+# Gear Live Characteristics
+PRODUCT_CHARACTERISTICS := nosdcard,watch
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -99,7 +102,7 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
-	frameworks/native/data/etc/android.hardware.screen.portrait.xml:system/etc/permissions/android.hardware.screen.portrait.xml \
+    frameworks/native/data/etc/android.hardware.screen.portrait.xml:system/etc/permissions/android.hardware.screen.portrait.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
