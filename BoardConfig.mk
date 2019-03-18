@@ -53,7 +53,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.sprat
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.sprat
 
 # SELinux policies
 # qcom sepolicy
